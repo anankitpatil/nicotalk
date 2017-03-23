@@ -1,0 +1,543 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+figure {
+    width: 100%;
+    margin: 0;
+}
+figure img {
+    width: 100%;
+    height: auto;
+}
+.white-text {
+    color: #FFF !important;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Nicotalk's custom styles
+   ========================================================================== */
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@font-face {
+    font-family: 'Arvo';
+    font-weight: bold;
+    src: url('../fonts/arvo-bold.eot');
+    src: url('../fonts/arvo-bold.ttf') format('truetype'),
+         url('../fonts/arvo-bold.woff') format('woff'),
+         url('../fonts/arvo-bold.svg') format('svg');
+}
+
+.nicotalk {
+    padding: 60px 0 0 0;
+    margin: 0;
+    width: 100%;
+    display: block;
+    background: url(../img/nicotalk-bg.jpg);
+    background-size: 100% auto;
+}
+
+.logo {
+    width: 93%;
+}
+.logo-text {
+    margin-left: 60px;
+}
+h1 {
+    font-family: 'Arvo';
+    font-weight: bold;
+    margin-top: 120px;
+    font-size: 60px;
+    color: #C1403C;
+    display: inline;
+}
+p.touch {
+    display: inline;
+    color: #000;
+    font-weight: normal;
+    font-size: 17px;
+}
+p.touch a {
+    font-size: 17px;
+    color: #000;
+}
+h2 {
+    font-family: 'Arvo';
+    font-weight: bold;
+    margin-top: 60px;
+    font-size: 36px;
+    color: #FFF;
+}
+h3 {
+    font-family: 'Arvo';
+    font-weight: bold;
+    margin-top: 60px;
+    font-size: 24px;
+    color: #414141;
+    margin-bottom: 30px;
+}
+p {
+    font-size: 21px;
+    color: #FFF;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+}
+ul {
+    list-style-type: none;
+    font-size: 18px;
+    color: #FFF;
+    font-weight: lighter;
+}
+ul li {
+    margin: 12px 0;
+    padding-right: 12px;
+    border-right: 2px solid #FFF;
+    font-family: 'Open Sans', sans-serif;
+}
+.social li {
+    border-right: 0;
+    margin: 0;
+}
+.social li a {
+    color: #FFF;
+    font-size: 24px;
+}
+
+.brand-box img.h30 {
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.brand-box img.h18 {
+    height: 18px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+.brand-box img.h60 {
+    height: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.brand-box img.h24 {
+    height: 24px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.brand-box {
+    overflow: auto;
+}
+.brand-box img {
+    height: 60px;
+    width: auto;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    float: left;
+}
+
+@media(max-width:1199px) {
+    h1 {
+        margin-top: 0px;
+    }
+    h3 {
+        margin-top: 30px;
+    }
+    p {
+        margin-top: 30px;
+    }
+    .clr-lft {
+        clear: left;
+    }
+    .mt0 {
+        margin-top: 0px !important;
+    }
+    .social li {
+        display: inline-block;
+    }
+}
+@media(max-width:991px) {
+    .nicotalk {
+        background-size: auto 120%;
+        background-position: center top;
+    }
+    h2 {
+        margin-top: 0;
+    }
+    p {
+        padding-left: 60px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    ul li {
+        font-size: 15px;
+        margin: 0;
+    }
+    .pull-res {
+        clear: none;
+    }
+    .clr-none {
+        clear: none;
+    }
+    p.touch {
+        display: block;
+    }
+}
+@media(max-width:767px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    .nicotalk {
+        background: none;
+    }
+    .logo {
+        width: calc(100% - 120px);
+        margin: 0 60px;
+    }
+    .logo-text {
+        width: calc(100% - 120px);
+    }
+    h1 {
+        font-size: 24px;
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    h2 {
+        background: url(../img/nicotalk-bg.jpg) no-repeat top right;
+        background-size: 240% auto;
+        margin-right: -15px;
+        margin-left: -15px;
+        margin-top: 60px;
+        padding: 30px;
+        text-align: center;
+    }
+    p {
+        color: #000;
+        margin: 60px 0;
+        padding: 0;
+        text-align: center;
+        font-size: 18px;
+    }
+    p.touch {
+        display: block;
+        margin: 30px 0 0;
+    }
+    h3 {
+        text-align: center;
+    }
+    ul {
+        padding: 0;
+    }
+    ul li {
+        color: #000;
+        font-size: 18px;
+        text-align: center;
+        margin: 12px 0;
+        padding-bottom: 9px;
+        border-bottom: 1px solid #EEE;
+    }
+    h3.white-text {
+        color: #000 !important;
+    }
+    .social {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .social li {
+        border-bottom: 0;
+    }
+    .social li a {
+        color: #000;
+        font-size: 30px;
+        margin: 0 15px;
+    }
+    .brand-box img {
+        width: calc(25% - 18px);
+        margin-right: 24px;
+        height: auto !important;
+    }
+    .brand-box img:nth-of-type(4n) {
+        margin-right: 0;
+    }
+    .brand-box img.h30, .brand-box img.h24, .brand-box img.h60, .brand-box img.h18 {
+        height: auto;
+    }
+    .brand-box img.clr-lft-m {
+        clear: left;
+    }
+}
+@media(max-width:359px) {
+    .brand-box img {
+        width: calc(50% - 30px);
+        margin-right: 30px;
+    }
+    .brand-box img:nth-of-type(even) {
+        margin-right: 0;
+    }
+    .brand-box img.clr-lft-m {
+        clear: none;
+    }
+    .brand-box img.clr-lft-x {
+        clear: left;
+    }
+    .brand-box img.clr-none-x {
+        clear: none !important;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
